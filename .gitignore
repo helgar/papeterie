@@ -1,0 +1,6 @@
+*.swp
+__pycache__
+*.log
+*.pyc
+*.pdf
+*.aux

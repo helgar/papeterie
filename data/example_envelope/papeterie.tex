@@ -1,0 +1,26 @@
+\documentclass[a6paper,landscape]{scrartcl}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+% Do not indent first line of paragraphs.
+\setlength{\parindent}{0pt}
+
+% Convert environement so that we can use absolute-positioned text boxes.
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{10mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{0mm}{0mm}
+
+\begin{document}
+
+\begin{textblock}{6}(1,1)
+Lisa and Millhouse Simpson\\
+345 Michigan Road\\
+Springfield\\
+USA
+\end{textblock}
+
+\begin{textblock}{6}(8,6)
+ADDRESS
+\end{textblock}
+
+\end{document}

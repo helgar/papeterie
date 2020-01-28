@@ -1,0 +1,9 @@
+{ "snippets":
+  { "FRONT": "front.ji2",
+    "FPIC": "frontpic.ji2",
+    "BACK": "back.ji2",
+    "BPIC": "backpic.ji2",
+    "INNERPAGELEFT": "innerpageleft.ji2",
+    "INNERPAGERIGHT": "innerpageright.ji2"
+  }
+}

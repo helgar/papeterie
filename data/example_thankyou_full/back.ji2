@@ -1,0 +1,4 @@
+{% if Language == 'English' %}The photos of the wedding can be viewed at http://www.example.com
+{% elif Language == 'German' %}Die Fotos unserer Hochzeit können hier angesehen werden: http://www.example.com
+{% else %}Bilderna av bröllopet kan man se här: http://www.example.com.
+{% endif %}

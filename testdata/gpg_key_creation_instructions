@@ -1,0 +1,10 @@
+%echo Generating a basic OpenPGP key
+Key-Type: RSA
+Key-Length: 4096
+Subkey-Type: ELG-E
+Subkey-Length: 4096
+Name-Real: Testing the Papeterie
+Name-Comment: This is not a real key. Do not use this in production.
+Name-Email: unittests_papeterie@velroyen.de
+Expire-Date: 1d
+Passphrase:Test123

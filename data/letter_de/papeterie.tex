@@ -1,0 +1,72 @@
+%\documentclass[a4paper]{scrartcl}
+\documentclass[10pt]{scrlttr2}
+
+\usepackage[ngerman]{babel}
+
+\usepackage{graphicx}
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{xcolor}
+\definecolor{black}{cmyk}{0, 0, 0, 1}
+
+% Do not indent first line of paragraphs.
+\setlength{\parindent}{0pt}
+
+% Set default font to typewriter-like font.
+\renewcommand{\familydefault}{\ttdefault}
+
+% Set font of backadress to the normal font.
+\setkomafont{backaddress}{\normalfont}
+
+% Turn off indentation of closing.
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% Using Courier font
+\renewcommand{\ttdefault}{pcr}
+
+% Make the subject bold
+\setkomafont{subject}{\normalfont\bfseries}
+
+\newcommand{\FromAddressLineFirst}{FROMADDRESS1}
+\newcommand{\FromAddressLineSecond}{FROMADDRESS2}
+
+\color{black}
+\begin{document}
+
+\setkomavar{fromname}{FROMNAME}
+\setkomavar{fromaddress}{\FromAddressLineFirst\\
+\FromAddressLineSecond}
+\setkomavar{fromphone}{FROMPHONE}
+\setkomavar{fromemail}{FROMEMAIL}
+\setkomavar{subject}{SUBJECT}
+
+\setkomavar{backaddress}{\usekomavar{fromname}\\ \FromAddressLineFirst\\ \FromAddressLineSecond}
+
+\setkomavar{firsthead}{
+  \begin{textblock*}{5cm}(14cm,2.5cm) % {block width} (coords)
+  \color{black}
+    {\usekomavar{fromname}}\\
+    \usekomavar{fromaddress}\\
+    \\
+    Email (bevorzugt):\\
+    \usekomavar{fromemail}\\
+    \\
+    Telefon:\\
+    \usekomavar{fromphone}
+  \end{textblock*}
+}
+
+
+
+\begin{letter}{RECIPIENTADDRESS}
+
+\opening{OPENING}
+
+TEXT
+
+\closing{CLOSING}
+
+\end{letter}
+
+\end{document}

@@ -1,0 +1,22 @@
+{% if Language == 'English' %}Hello dear,
+
+we invite you to our wedding. Please come to our epic party on May 23rd, 2020 in Moe's Tavern.
+
+Let us know if you can join!
+
+Cheers,
+Lisa and Millhouse{% elif Language == 'German' %}Hallo ihr lieben,
+
+wir laden herzlich zu unserer Hochzeit ein. Die epische Party wird am 23. Mai 2020 in Moes Taverne stattfinden.
+
+Bitte Bescheid sagen ob ihr dabei seid!
+
+Cheers,
+Lisa und Millhouse{% else %}Hej,
+
+vi inbjuda till vår bröllopsfest. Party är på 23. Mai 2020 i Moe's Pub.
+
+Säger om ni kommer!
+
+Hej då,
+Lisa and Millhouse{% endif %}

@@ -1,0 +1,83 @@
+\documentclass[a5paper]{scrartcl}
+
+% For German umlauts
+\usepackage[ngerman]{babel}
+
+% Needed to include pictures
+\usepackage{graphicx}
+
+% Specify a custom format. This is the biggest card that is allowed to be sent as
+% 'normal' postcard by the German mail. Check the rules in your country before
+% sending this.
+\usepackage[paperwidth=175mm,
+    paperheight=125mm,
+    left=5mm,
+    right=5mm,
+    top=5mm,
+    bottom=5mm]{geometry}
+
+% Set default font to typewriter-like font.
+\renewcommand{\familydefault}{\ttdefault}
+
+% Using Courier font
+\renewcommand{\ttdefault}{pcr}
+
+% Do not indent first line of paragraphs.
+\setlength{\parindent}{0pt}
+
+% Convert environement so that we can use absolute-positioned text boxes.
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{10mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{0mm}{0mm}
+
+% Stuff necessary to have a nice cursive font
+% Install texlive-fonts-extra for this to work.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+% Color of the mentioning of the source.
+\usepackage{xcolor}
+\definecolor{grey}{cmyk}{0, 0, 0, 0.5}
+
+% For setstretch, custom line spacing
+\usepackage{setspace}
+
+\begin{document}
+
+\begin{textblock}{16.5}(1,1)
+  \begin{center}
+    \centering\includegraphics[height=8.5cm,keepaspectratio]{PAPETERIEPICPATH/default.png}
+
+    \vspace{0.5cm}
+
+    {\huge\calligra Save the Date}
+  \end{center}
+\end{textblock}
+
+% enforces the pagebreak
+\mbox{}\newpage
+% this is not enough to enforce the pagebreak
+\pagebreak
+
+% The (signed) text on the postcard.
+\begin{textblock}{9}(0.5,0.5)
+  {\fontsize{7}{9}\selectfont SIGNATURE \par }
+\end{textblock}
+
+% The mentioning of the source.
+\begin{textblock}{5.5}(0.5,11.5)
+{\color{grey}\tiny\setstretch{1.20} Created with Helga's Papeterie\\ https://github.com/helgar/papeterie \par }
+\end{textblock}
+
+% The vertical line between text and address.
+\begin{textblock}{1}(10.5,0.5)
+  {\vrule width 0.1ex height 115mm}
+\end{textblock}
+
+% The address
+\begin{textblock}{6.25}(11.25,5.5)
+  ADDRESS
+\end{textblock}
+
+\end{document}

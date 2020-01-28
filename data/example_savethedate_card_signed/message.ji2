@@ -1,0 +1,5 @@
+{{ Opening }}
+
+{% if Language == 'English' %}we will get married! Please reserve Saturday, May 23rd 2020 for an epic party.{% elif Language == 'German' %}Wir heiraten! Bitte {% if Pronoun == 'du' %}halte dir{% elif Pronoun == 'ihr' %}haltet euch{% else %}halten Sie sich{% endif %} Samstag, 23. Mai 2020, frei für eine epische Party.{% else %}Vi ska gifta oss! Reservera lördag 23 Mai 2020 för en episk party.{% endif %}
+
+{{ Closing }}

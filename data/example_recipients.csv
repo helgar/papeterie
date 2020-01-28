@@ -1,0 +1,7 @@
+AddressLine1,AddressLine2,AddressLine3,AddressLine4,AddressLine5,Opening,Closing,Pronoun,Theme,Ceremony,OutOfTown,Language
+Charles Montgomery Burns,Main St 45,4562 Springfield,USA,,"Dear Uncle Charles,","Sincerely, Lisa and Millhouse",you,Default,No,No,English
+Bart Simpson,Second St 3,4562 Springfield,USA,,"Dear Bart,","Yours, Lisa and Millhouse",you,Cthulhu,Yes,Yes,English
+Astrid Svensson,Huvudgatan 23,34567 Stockholm,Sweden,,"Kära Granny,","Kram, Lisa and Millhouse",du,Cthulhu,Yes,Yes,Swedish
+Helga Müller,and Fifi,Hauptstrasse 5,12345 Berlin,Germany,"Liebe Tante Helga,",Deine Lisa und Millhouse,du,Default,Yes,Yes,German
+"Anna, Peter, Emil,",Nora und Garfield,Waldweg 3,45678 Stuttgart,Germany,"Liebe Familie,",Eure Lisa und Millhouse,ihr,Goth,No,No,German
+Herr Prof. Dr. Reiser,Einsteinstrasse 1,67890 Bayreuth,Germany,,"Sehr geehrter Herr Reiser,","Hochachtungsvoll, Lisa und Millhouse",Sie,Default,No,Yes,German

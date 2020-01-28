@@ -1,0 +1,1 @@
+{% if Language == 'English' %}Thank you!{% elif Language == 'German' %}Danke!{% else %}Tack!{% endif %}

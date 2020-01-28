@@ -1,0 +1,8 @@
+FRONT
+This is the front
+BACK
+This is the back
+INNERPAGELEFT
+This is the left inside of the card
+INNERPAGERIGHT
+This is the right inside of the card

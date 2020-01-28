@@ -1,0 +1,27 @@
+{{ Opening }}
+
+{% if Language == 'English' %}We invite you to our wedding.{% if Ceremony == 'Yes' %}
+
+The ceremony is taking place on Sunday, May 1st 2020, in Satan's Church in Salem.{% endif %}
+
+Afterwards we party a Moe's.
+{% if OutOfTown == 'Yes' %}
+We recommend Applebee's Hotel for overnight stays.
+{% endif %}
+{% elif Language == 'German' %}{% if Pronoun == "du"%}du bist{% elif Pronoun == "ihr" %}ihr seid{% else %}Sie sind{% endif %} herzlich zu unserer Hochzeit eingeladen.{% if Ceremony == 'Yes' %}
+
+Die Trauung findet am 1. Mai 2020 in Satans Kirche in Salem statt.{% endif %}
+
+Danach feiern wir in Moes Kneipe.
+{% if OutOfTown == 'Yes' %}
+Wir empfehlen Hotel Apfelbiene für Übernachtungen.
+{% endif %}
+{% else %}Du år inbjudan till vår bröllopsfest.
+{% if Ceremony == 'Yes' %}
+Bröllopet år på första Mai 2020 i Satans kyrkan i Salem.{% endif %}
+
+Sen ska vi fira hos Moe.
+{% if OutOfTown == 'Yes' %}
+Vi rekommendera Hotel Applebee för att stanna över natt.
+{% endif %}
+{% endif %}{{ Closing }}

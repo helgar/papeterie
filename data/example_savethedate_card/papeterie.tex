@@ -1,0 +1,60 @@
+\documentclass[a6paper,landscape]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+% Do not indent first line of paragraphs.
+\setlength{\parindent}{0pt}
+
+\pagestyle{empty}
+
+% Convert environement so that we can use absolute-positioned text boxes.
+\usepackage[absolute]{textpos}
+\setlength{\TPHorizModule}{10mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{0mm}{0mm}
+
+% Stuff necessary to have a nice cursive font
+% Install texlive-fonts-extra for this to work.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+\definecolor{grey}{cmyk}{0, 0, 0, 0.5}
+
+% for setstretch
+\usepackage{setspace}
+
+\begin{document}
+
+\begin{textblock}{13}(1,1)
+  \begin{center}
+    \centering\includegraphics[height=6cm]{PAPETERIEPICPATH/default.png}
+
+    \vspace{0.5cm}
+
+    {\huge\calligra Save the Date}
+  \end{center}
+\end{textblock}
+
+\mbox{}\newpage
+
+\pagebreak
+
+\begin{textblock}{1}(7.5,0.5)
+  {\vrule width 0.1ex height 95 mm}
+\end{textblock}
+
+\begin{textblock}{5.5}(1,1)
+  MESSAGE
+\end{textblock}
+
+\begin{textblock}{5.5}(1,9)
+{\color{grey}\tiny\setstretch{1.30} Created with Helga's Papeterie\\ https://github.com/helgar/papeterie \par }
+\end{textblock}
+
+\begin{textblock}{5.5}(8.5,5)
+  ADDRESS
+\end{textblock}
+
+\end{document}

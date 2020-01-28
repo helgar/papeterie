@@ -1,0 +1,1 @@
+{% if Language == 'English' %}Invitation{% elif Language == 'German' %}Einladung{% else %}Inbjudan{% endif %}

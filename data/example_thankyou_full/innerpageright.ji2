@@ -1,0 +1,6 @@
+{{ Opening }}
+
+{% if Language == 'English' %}We thank you for the pleasantries and gifts to our wedding.{% elif Language == 'German' %}Wir bedanken uns bei {% if Pronoun == "du"%}dir{% elif Pronoun == "ihr" %}euch{% else %}Ihnen{% endif %} für die Aufmerksamkeiten und Geschenke zu unserer Hochzeit.
+{% else %}Vi tackar för presenter och uppmårksamheter till vår bröllop.{% endif %}
+
+{{ Closing }}

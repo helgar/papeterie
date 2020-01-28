@@ -1,0 +1,1 @@
+{% if Theme == 'Goth' %}back_goth.png{% elif Theme == 'Cthulhu' %}back_cthulhu.png{% else %}back_default.png{% endif %}

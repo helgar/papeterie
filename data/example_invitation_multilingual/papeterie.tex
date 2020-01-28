@@ -1,0 +1,58 @@
+\documentclass[a5paper,landscape]{scrartcl}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm]{geometry}
+
+% Install texlive-fonts-extra for this to work.
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+\definecolor{grey}{cmyk}{0, 0, 0, 0.5}
+
+% for setstretch
+\usepackage{setspace}
+
+\pagestyle{empty}
+
+\usepackage{multicol}
+\setlength{\columnsep}{4cm}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+\begin{multicols}{2}
+
+\begin{center}
+\vspace*{\fill}
+BACK
+\vspace{2cm}
+
+{\color{grey}\tiny\setstretch{1.30} Created with Helga's Papeterie\\ https://github.com/helgar/papeterie \par }
+\end{center}
+
+\columnbreak
+
+  \begin{center}
+    \centering\includegraphics[width=7cm,keepaspectratio]{PAPETERIEPICPATH/default.png}
+
+    \vspace{1cm}
+
+    {\huge\calligra FRONT}
+  \end{center}
+
+\end{multicols}
+
+\pagebreak
+
+\begin{multicols}{2}
+
+\begin{center}
+  {\color{grey}INNERPAGELEFT}
+\end{center}
+
+\columnbreak
+
+INNERPAGERIGHT
+
+\end{multicols}
+\end{document}

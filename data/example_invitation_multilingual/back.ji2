@@ -1,0 +1,13 @@
+{% if Language == 'English' %}If you have any questions, contact the best man or the bride's maid.
+
+Jamie Smith 123 456789
+Steven Baker 987 654321
+{% elif Language == 'German' %}Für Fragen stehen unsere Trauzeugen zur Verfügung.
+
+Jamie Smith 123 456789
+Steven Baker 987 654321
+{% else %}Om du har frågor, kontakta gårna vår vittnen.
+
+Jamie Smith 123 456789
+Steven Baker 987 654321
+{% endif %}
